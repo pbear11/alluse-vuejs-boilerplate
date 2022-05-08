@@ -9,9 +9,9 @@ Vue.use(Vuex);
 export const rootState = {
   system: {
     appName: 'Name',
-    version: '1.0',
+    version: '1.0'
   },
-  isLoading: false,
+  isLoading: false
 }
 
 export const getters = {

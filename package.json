@@ -10,6 +10,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "babel-jest": "^24.9.0",
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
@@ -23,61 +24,39 @@
     "@babel/core": "^7.17.10",
     "@babel/preset-env": "^7.17.10",
     "@types/jest": "^24.0.19",
-    "@typescript-eslint/eslint-plugin": "^2.33.0",
-    "@typescript-eslint/parser": "^2.33.0",
-    "@vue/cli-plugin-babel": "~4.4.1",
-    "@vue/cli-plugin-eslint": "~4.4.1",
-    "@vue/cli-plugin-router": "~4.4.1",
-    "@vue/cli-plugin-typescript": "~4.4.1",
-    "@vue/cli-plugin-unit-jest": "^4.4.6",
-    "@vue/cli-plugin-vuex": "~4.4.1",
-    "@vue/cli-service": "~4.4.1",
-    "@vue/eslint-config-airbnb": "^5.0.2",
-    "@vue/eslint-config-typescript": "^5.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "@typescript-eslint/parser": "^5.22.0",
+    "@vue/cli-plugin-babel": "^5.0.4",
+    "@vue/cli-plugin-eslint": "^5.0.4",
+    "@vue/cli-plugin-router": "^5.0.4",
+    "@vue/cli-plugin-typescript": "^5.0.4",
+    "@vue/cli-plugin-unit-jest": "^5.0.4",
+    "@vue/cli-plugin-vuex": "^5.0.4",
+    "@vue/cli-service": "^5.0.4",
+    "@vue/eslint-config-airbnb": "^6.0.0",
+    "@vue/eslint-config-typescript": "^9.1.0",
     "@vue/test-utils": "^1.3.0",
+    "@vue/vue2-jest": "^27.0.0-alpha.3",
     "babel-core": "^7.0.0-bridge.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-vue": "^6.2.2",
+    "eslint": "^7.32.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-vue": "^8.7.1",
+    "eslint-plugin-vuejs-accessibility": "^1.1.0",
+    "jest": "^27.1.0",
     "node-sass": "^4.12.0",
-    "sass-loader": "^8.0.2",
-    "typescript": "~3.9.3",
+    "sass-loader": "^7.1.0",
+    "ts-jest": "^27.0.4",
+    "typescript": "~4.5.5",
     "vue-template-compiler": "^2.6.11"
-  },
-  "jest": {
-    "transform": {
-      ".*\\.(js)$": "babel-jest"
-    }
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "@vue/airbnb",
-      "@vue/typescript/recommended"
-    ],
-    "parserOptions": {
-      "ecmaVersion": 2020
-    },
-    "rules": {},
-    "overrides": [
-      {
-        "files": [
-          "**/__tests__/*.{j,t}s?(x)",
-          "**/tests/unit/**/*.spec.{j,t}s?(x)"
-        ],
-        "env": {
-          "jest": true
-        }
-      }
-    ]
   },
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "jest": {
+    "transform": {
+      ".*\\.(js)$": "babel-jest"
+    }
+  }
 }

@@ -1,7 +1,5 @@
 import { ActionContext } from 'vuex';
-
 import { IExample } from '@/models';
-
 const state: IExample = {
   name: 'Example',
   id: 'exampleId'
@@ -26,7 +24,7 @@ const mutations = {
 };
 
 const actions = {
-  setName(action: ActionContext<IExample, any>, name: string) {
+  async setName(action: ActionContext<IExample, any>, name: string) {
     action.commit('setName', name);
   },
   setId(action: ActionContext<IExample, any>, id: string) {
