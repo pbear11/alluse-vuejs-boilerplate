@@ -1,4 +1,5 @@
 # alluse-vue-boilerplate
+Minimal customised vueJs boilerplate for faster development. Example of vuex Store and Services added. Also added minimal typescript configuration with global Css configuration.
 
 ## Project setup
 ```
